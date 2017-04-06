@@ -28,7 +28,7 @@ const buildQuery = (criteria) => {
   const query = {};
 
   if (criteria.name) {
-    criteria.$text = { $search: criteria.name };
+    query.$text = { $search: criteria.name };
   }
 
   if (criteria.age) {
